@@ -1,6 +1,5 @@
 numpy
 pandas
-streamlit
 tensorflow
-PIL==11.0.0
+PIL
 
