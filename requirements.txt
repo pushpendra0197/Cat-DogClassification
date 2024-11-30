@@ -1,4 +1,5 @@
 numpy
 pandas 
 tensorflow
-PIL
+PIL==11.0.0
+
