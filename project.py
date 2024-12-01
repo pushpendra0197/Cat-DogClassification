@@ -26,3 +26,4 @@ if button:
                 st.subheader("Bark Bark its a 🐶")
                 do=(r"dog-barking-70772.mp3")
                 st.audio(do, format='audio/mp3', autoplay=True,start_time=15)
+st.warning("Kindly upload close/clear Photo of Dogs and Cat") 
