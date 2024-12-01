@@ -19,10 +19,10 @@ if button:
             if pred<=0.5:
                 st.image(image=img)
                 st.subheader("Meow Meow its a 🐱")
-                ki=(r"C:\Users\KINGNICKS-DELL\Downloads\da\kitten-meowing-105618.mp3")
+                ki=(r"kitten-meowing-105618.mp3")
                 st.audio(ki, format='audio/mp3', autoplay=True,start_time=7)
             elif pred>0.5:
                 st.image(image=img)
                 st.subheader("Bark Bark its a 🐶")
-                do=(r"C:\Users\KINGNICKS-DELL\Downloads\da\dog-barking-70772.mp3")
+                do=(r"dog-barking-70772.mp3")
                 st.audio(do, format='audio/mp3', autoplay=True,start_time=15)
