@@ -18,12 +18,12 @@ if button:
             pred=Model.predict(image_ex)[0][0]
             if pred<=0.5:
                 st.image(image=img)
-                st.subheader("Meow Meow its a 🐱")
+                st.subheader("Meow Meow it's a 🐱")
                 ki=(r"kitten-meowing-105618.mp3")
                 st.audio(ki, format='audio/mp3', autoplay=True,start_time=7)
             elif pred>0.5:
                 st.image(image=img)
-                st.subheader("Bark Bark its a 🐶")
+                st.subheader("Bark Bark it's a 🐶")
                 do=(r"dog-barking-70772.mp3")
                 st.audio(do, format='audio/mp3', autoplay=True,start_time=15)
 st.warning("Kindly upload close/clear Photo of Dogs and Cat") 
