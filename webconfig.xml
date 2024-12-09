@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="pythonHandler" path="*" verb="*" modules="IsapiModule" scriptProcessor="C:\Python39\python.exe|C:\python39\Scripts\streamlit.exe" resourceType="Unspecified" />
+    </handlers>
+    <rewrite>
+      <rules>
+        <rule name="StreamlitApp" stopProcessing="true">
+          <match url="(.*)" />
+          <action type="Rewrite" url="http://localhost:8501/{R:1}" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
